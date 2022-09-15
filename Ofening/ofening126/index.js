@@ -1,11 +1,15 @@
-let i =0;
-let opvangbank = "";
+let tekenReeks = prompt("Geef een zijn in:");
+let karakter = prompt("Geef een letter (karakter) in:");
 
-for (i;i<=99;i++){
-    if (i<=9){
-        opvangbank = opvangbank + "0"+ i + ",";
-    }else{
-        opvangbank = opvangbank + i + ",";
+let aantalKaraktersTellen =0;
+
+//                  0        TEST (0123)
+for(let plaats=0; plaats <= tekenReeks.length;plaats++){
+    if (tekenReeks.charAt(plaats) === karakter){
+        aantalKaraktersTellen ++;
+        //aantalKaraktersTellen +=1;
+        //aantalKaraktersTellen = aantalKaraktersTellen +1;
+
     }
 }
-console.log(opvangbank);
+console.log(aantalKaraktersTellen);
