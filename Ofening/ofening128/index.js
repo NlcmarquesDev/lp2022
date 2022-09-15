@@ -12,7 +12,7 @@ for (i;i<=number;i++){
     console.log(opvangbank);
 Mijn versie
 */
-gir
+g
 let i = 1;
 let resultaat = " ";
 let x = 1;
