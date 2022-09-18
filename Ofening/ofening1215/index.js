@@ -1,13 +1,14 @@
-let hoeVeelGetal = Number(prompt('Hoe veel getallen hij wil ingeven?'));
 let som = 0;
-while (getal >0) {
-    getal = Number(prompt('Geef een getal in, stop met een negatief getal'));
-}
+let teller = 1;
+let gemiddelde = 0;
 
-let som = 0;
-let getal = Number(prompt('Geef een getal in, stop met een negatief getal'));
-while (getal >0){
-    som+=getal;
-    getal = Number(prompt('Geef een getal in, stop met een negatief getal'));
+let aantalgetallen = Number(prompt('Hoe veel getallen hij wil ingeven?'));
+
+while (teller <=aantalgetallen) {
+    let getal = Number(prompt('Geef een getal in, stop met een negatief getal'));
+    som+= getal;
+    teller++;
 }
-console.log(som);
+console.log("de totale som van:" , aantalgetallen, "getallen is:", som);
+gemiddelde = som/aantalgetallen;
+console.log("het gemmidelde van:", aantalgetallen, "getallen is", gemiddelde);

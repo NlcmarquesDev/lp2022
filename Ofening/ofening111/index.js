@@ -1,3 +1,7 @@
+let som = 0;
+let teller = 1;
+let gemiddelde = 0;
+
 let age = Number(prompt("Geef de leeftijd in:"));
 
 if(age >= 1{
